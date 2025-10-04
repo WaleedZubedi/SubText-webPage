@@ -1,0 +1,206 @@
+/* Dark Theme CSS for Privacy and Terms Pages */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    color: #e0e0e0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #e0e0e0;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+.logo span {
+    color: #ff6b6b;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: #707070;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #ff6b6b;
+}
+
+.back-link::before {
+    content: '←';
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+/* Content */
+.content {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.content h1 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+
+.content h2 {
+    font-size: 1.5em;
+    margin: 30px 0 15px 0;
+    color: #ff6b6b;
+    font-weight: 400;
+}
+
+.content h3 {
+    font-size: 1.2em;
+    margin: 25px 0 10px 0;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.content p {
+    margin-bottom: 15px;
+    color: #b0b0b0;
+    text-align: justify;
+}
+
+.content ul, .content ol {
+    margin: 15px 0 15px 20px;
+    color: #b0b0b0;
+}
+
+.content li {
+    margin-bottom: 8px;
+}
+
+.content strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.content a {
+    color: #ff6b6b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.content a:hover {
+    color: #ff8a8a;
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    color: #707070;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: #ff6b6b;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff8a8a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .content {
+        padding: 25px;
+    }
+    
+    .logo {
+        font-size: 2em;
+    }
+    
+    .content h1 {
+        font-size: 1.8em;
+    }
+    
+    .content h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 20px;
+    }
+    
+    .logo {
+        font-size: 1.8em;
+    }
+    
+    .content h1 {
+        font-size: 1.6em;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}

@@ -4,7 +4,7 @@
   "description": "A TypeScript website project with live server",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "echo 'Static site - no build required'",
     "dev": "concurrently \"tsc --watch\" \"live-server --port=3000 --open=/index.html\"",
     "start": "live-server --port=3000 --open=/index.html",
     "watch": "tsc --watch"
