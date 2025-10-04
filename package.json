@@ -1,0 +1,21 @@
+{
+  "name": "subtext-website",
+  "version": "1.0.0",
+  "description": "A TypeScript website project with live server",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "concurrently \"tsc --watch\" \"live-server --port=3000 --open=/index.html\"",
+    "start": "live-server --port=3000 --open=/index.html",
+    "watch": "tsc --watch"
+  },
+  "keywords": ["typescript", "website", "live-server"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "typescript": "^5.3.0"
+  }
+}
